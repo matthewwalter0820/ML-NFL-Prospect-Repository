@@ -57,13 +57,13 @@ defense <- defense %>%
   ungroup()
 
 
-merged_df <- read.csv("C:/Users/jackd/OneDrive/Desktop/UC BANA/Capstone/College/Defense/Overall/Merged_Defense_Data.csv")
+# merged_df <- read.csv("C:/Users/jackd/OneDrive/Desktop/UC BANA/Capstone/College/Defense/Overall/Merged_Defense_Data.csv")
+merged_df <- read.csv("Merged_Defense_Data.csv")
 
-
-cvg <- read.csv("College/Defense/Coverage Scheme/Coverage Scheme All Years.csv")
-passrush <- read.csv("College/Defense/Pass Rush/Pass Rush All Years.csv")
-rundef <- read.csv("College/Defense/Run Defense/Run Defense All Years.csv")
-slot <- read.csv("College/Defense/Slot/Slot All Years.csv")
+cvg <- read.csv("Coverage Scheme All Years.csv")
+passrush <- read.csv("Pass Rush All Years.csv")
+rundef <- read.csv("Run Defense All Years.csv")
+slot <- read.csv("Slot All Years.csv")
 
 slot <- slot %>%
   select(-c(player_game_count, receptions, targets, yards, qb_rating_against, 
