@@ -115,7 +115,7 @@ rm(cvg, rundef, passrush, merged_df, slot)
 
 library(readxl)
 
-prospects <- read_xlsx("C:/Users/jackd/OneDrive/Desktop/UC BANA/Capstone/Prospect_Ages.xlsx")
+prospects <- read_xlsx("Prospect_Ages.xlsx")
 
 combine_2025 <- load_combine(2025)
 combine_2025 <- combine_2025 %>%
@@ -159,11 +159,11 @@ prospects_long <- prospects %>%
   select(-c(season, player)) 
 
 # You can either read them one by one, specifying exact file paths:
-coverage_scheme_2024 <- read.csv("C:/Users/jackd/OneDrive/Desktop/UC BANA/Capstone/College/Defense/2024/Coverage Scheme 2024.csv")
-defense_ovr_2024     <- read.csv("C:/Users/jackd/OneDrive/Desktop/UC BANA/Capstone/College/Defense/2024/Defense Ovr 2024.csv")
-pass_rush_2024       <- read.csv("C:/Users/jackd/OneDrive/Desktop/UC BANA/Capstone/College/Defense/2024/Pass Rush 2024.csv")
-run_defense_2024     <- read.csv("C:/Users/jackd/OneDrive/Desktop/UC BANA/Capstone/College/Defense/2024/Run Defense 2024.csv")
-slot_2024            <- read.csv("C:/Users/jackd/OneDrive/Desktop/UC BANA/Capstone/College/Defense/2024/Slot 2024.csv")
+coverage_scheme_2024 <- read.csv("Coverage Scheme 2024.csv")
+defense_ovr_2024     <- read.csv("Defense Ovr 2024.csv")
+pass_rush_2024       <- read.csv("Pass Rush 2024.csv")
+run_defense_2024     <- read.csv("Run Defense 2024.csv")
+slot_2024            <- read.csv("Slot 2024.csv")
 
 
 
